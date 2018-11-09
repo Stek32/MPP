@@ -37,7 +37,7 @@ public class Main {
 
         stack.Pop();
 
-        System.out.println("From Stack after popping: "+stack.getTop());
+        //System.out.println("From Stack after popping: "+stack.getTop());
 
 
         Queue queue=new Queue();
@@ -46,7 +46,15 @@ public class Main {
 
         queue.Dequeue();
 
-        System.out.println("From Queue after Dequeuing: "+queue.getFront());
+        //System.out.println("From Queue after Dequeuing: "+queue.getFront());
+
+
+        HashTable hashTable=new HashTable();
+        hashTable.Put(4,"Hello");
+        hashTable.Put(3,"World");
+
+        System.out.println(hashTable.get(4));
+
 
     }
 }
