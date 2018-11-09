@@ -1,5 +1,7 @@
 package com.company;
 
+import com.company.Trees.BinarySearchTree;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -53,7 +55,17 @@ public class Main {
         hashTable.Put(4,"Hello");
         hashTable.Put(3,"World");
 
-        System.out.println(hashTable.get(4));
+       // System.out.println(hashTable.get(4));
+
+        BinarySearchTree binarySearchTree=new BinarySearchTree();
+        binarySearchTree.Add(12);
+        binarySearchTree.Add(4);
+        binarySearchTree.Add(2);
+        binarySearchTree.Add(15);
+        binarySearchTree.Add(3);
+        binarySearchTree.Add(25);
+
+        System.out.println(binarySearchTree.Root.RightChild.RightChild.Data);
 
 
     }
